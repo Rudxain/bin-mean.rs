@@ -20,10 +20,20 @@
 ///
 /// assert_eq!(ret, 6);
 /// ```
+#[allow(clippy::missing_const_for_fn)]
 #[must_use]
 pub fn sum(s: &[i8]) -> i8 {
-    todo!();
-    //s.iter().sum()
+    let mut acc: i8 = 0;
+
+    let mut i: usize = 0;
+    let mut overshoot: usize;
+    while i < s.len() {
+        let n = s[i];
+        i += 1;
+        i <<= 1;
+        todo!();
+    }
+    acc
 }
 
 /// Sums the elements of a slice.
@@ -43,7 +53,6 @@ pub fn sum(s: &[i8]) -> i8 {
 #[must_use]
 pub fn wrapping_sum(s: &[i8]) -> i8 {
     todo!();
-    //s.iter().fold(0, |a, b| a.wrapping_add(*b))
 }
 
 /// Sums the elements of a slice.
@@ -75,7 +84,16 @@ mod tests {
     use super::*;
 
     #[test]
-    fn it_works() {
-        assert_eq!(sum(&[2, 2]), 4);
+    fn test_sum() {
+        let s = [2, 2];
+        assert_eq!(sum(&s), s.iter().sum());
+    }
+    #[test]
+    fn test_wrap() {
+        let s = [2, 2];
+        assert_eq!(
+            wrapping_sum(&s),
+            s.iter().fold(0, |a, b| a.wrapping_add(*b))
+        );
     }
 }
