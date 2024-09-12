@@ -13,3 +13,5 @@ The algorithm exploits the following lemmas (theorems?):
 - Multiplication is faster than repeated addition
 - [Bin exponentiation](https://en.wikipedia.org/wiki/Exponentiation_by_squaring) is faster than repeated multiplication
 - Iterating over all elements of a list is `O(n)`, but finding values in a sorted list can be as fast as `O(log(n))`
+
+Even though the implementation will only be defined for `u8`s, I hope that the rough proof-of-concept can help optimize many other programs that deal with sorted values of any type.
