@@ -1,11 +1,9 @@
-# [RLE](https://en.wikipedia.org/wiki/Run-length_encoding) x [BS](https://en.wikipedia.org/wiki/Binary_search) x Math-means
+# [RLE](https://en.wikipedia.org/wiki/Run-length_encoding) × [BS](https://en.wikipedia.org/wiki/Binary_search) = ⚡🚀
 
 > [!warning]
 > This is an unimplemented and experimental crate!
 
-This is a specialized algorithm. It requires:
-- The list to be sorted
-- The number of unique values should be (at most) `log(len)` for arithmetic-mean, and `len / 2` for geometric-mean. This is just for the overhead to be worthwhile.
+This is a specialized algorithm. It requires the list to be sorted. The number of unique values should be (at most) `log(len)` for arithmetic-mean, and `len / 2` for geometric-mean. This is just for the overhead to be worthwhile.
 
 The algorithm exploits the following lemmas (theorems?):
 - `a + a = 2a`, `a + a + a ... = n*a`
