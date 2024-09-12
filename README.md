@@ -1,4 +1,4 @@
-# [RLE](https://en.wikipedia.org/wiki/Run-length_encoding) x [BS](https://en.wikipedia.org/wiki/Binary_search), or "calculating math-means in logarithmic-time"
+# [RLE](https://en.wikipedia.org/wiki/Run-length_encoding) x [BS](https://en.wikipedia.org/wiki/Binary_search) x Math-means
 
 This is a specialized algorithm. It requires:
 - The list to be sorted
