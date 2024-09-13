@@ -14,7 +14,7 @@ The algorithm exploits the following lemmas (theorems?):
 - [Bin exponentiation](https://en.wikipedia.org/wiki/Exponentiation_by_squaring) is faster than repeated multiplication
 - Iterating over all elements of a list is `O(n)`, but finding values in a sorted list can be as fast as `O(log(n))`
 
-Even though the implementation will only be defined for `u8`s, I hope that the rough proof-of-concept can help optimize many other programs that deal with sorted values of any type.
+Even though the implementation will only be defined for `u8`s, I hope that the rough proof-of-concept can help optimize many other programs that deal with sorted values of any type. Such as a [specialized compressor](https://discord.com/channels/244230771232079873/504289362880495616/1284115409146220657)
 
 ## Informal algorithm
 The following is a non-rigorous description (or prescription?). Ambiguities are here because this is just a rough idea of what's on my mind:
