@@ -3,7 +3,7 @@
 > [!warning]
 > This is an unimplemented and experimental crate!
 
-This is a specialized algorithm. It requires the list to be sorted. The number of unique values should be (at most) `log(len)` for arithmetic-mean, and `len / 2` for geometric-mean. This is just for the overhead to be worthwhile.
+This is a specialized algorithm. It requires the list to be sorted. The number of unique values should be (at most) `log(len)` for sum-like fns (addition, bitwise XOR, arithmetic-mean), and `len / 2` for geometric-mean (or any other expensive reduction). This is just for the overhead to be worthwhile.
 
 The algorithm exploits the following lemmas (theorems?):
 - `a + a = 2a`, `a + a + a ... = n*a`
